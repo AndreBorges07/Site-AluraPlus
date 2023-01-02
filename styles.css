@@ -1,0 +1,162 @@
+:root{ /*Root é bom pra colocar as variáveis, puxando o nome da cor por exemplo.*/
+    --branco-principal: #FFFFFF;
+    --cinza-secundário: #C0C0C0;
+    --botao-azul: #308bfc;
+    --cor-defundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #6fb0ff;
+    
+}
+
+body{
+    background-color: var(--cor-defundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{ /*para deixar as margens zeradas, usamos esse "*" dizendo que todos normalmente são zerados.(O Reset.css também faz isso.)*/
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center; /*Pegou todos os itens -que no caso era a "Div Principal" e colocou no meio da página (ou melhor, no meio do Section)*/
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none; /*É pra deixar o texto sem o sublinhado que o link automaticamente coloca*/
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundário);
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__botao{
+    display: inline-block; /*Arrumou o botão sem problema*/
+    margin-top: 1em; /*Uma pequena margem no topo(óbvio, não?) e esse "em" é referencial, ajuda muito na responsividade.*/
+}
+
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+
+}
+
+.descricao__texto{
+    color: var(--cinza-secundário);
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*Serve para tirar o índice, antes era "•", agora está vazio.*/
+    margin: 5em 0;
+    
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin-top: 5em 3em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*Serve para tirar o índice, antes era "•", agora está vazio.*/
+    margin: 1em 1em;
+    
+}
+
+.lista__link{
+    margin: 1em;
+    font-size: 16px;    
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+
+.rodape__texto{
+    font-size: 14px;
+    color: var(--cinza-secundário);
+    margin: 1em;
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-defundo);
+}
