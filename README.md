@@ -1,2 +1,2 @@
 # Site-AluraPlus
-Projeto para o desenvolvimento do aprendizado de Front-End, voltado ao HTMl e CSS. 
+Projeto para o desenvolver os conhecimentos de Front-End, voltado ao HTMl e CSS. 
