@@ -4,7 +4,7 @@
     --botao-azul: #308bfc;
     --cor-defundo: #00030C;
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #6fb0ff;
+    --botao-azul-efeito: #1e00b6c3;
     
 }
 
@@ -56,6 +56,7 @@ body{
     display: block;
     text-decoration: none; /*É pra deixar o texto sem o sublinhado que o link automaticamente coloca*/
     margin-bottom: 1em;
+    transition: 1s all;
 }
 
 .botao_secundario{
@@ -89,6 +90,12 @@ body{
     font-size: 48px;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
+    transition: 1s all;
+
+}
+
+.descricao__titulo:hover, .dispositivos__titulo:hover{
+    transform: scale(1.1);
 
 }
 
@@ -105,8 +112,18 @@ body{
     justify-content: center;
     list-style-type: none; /*Serve para tirar o índice, antes era "•", agora está vazio.*/
     margin: 5em 0;
-    
+    transition: 1s all;
 }
+
+.dispositivos__lista li{
+    transition: 1s all;
+}
+
+.dispositivos__lista li:hover{
+    transform: rotate(5deg) scale(1.1);
+	box-shadow: 10px 10px 10px #000000, inset 0 0 10px #0000004c;
+}
+
 
 .dispositivos{
     text-align: center;
@@ -115,6 +132,7 @@ body{
 .dispositivos__titulo{
     font-size: 48px;
     color: var(--branco-principal);
+    transition: 1s all;
 }
 
 .lista__item{
@@ -158,8 +176,11 @@ body{
 
 .container__botao:hover{
     background-color: var(--botao-azul-efeito);
-    color: var(--cor-defundo);
+    transform: scale(1.1);
+	box-shadow: 10px 10px 10px #000000, inset 0 0 10px #01024d; /*Fazer uma sombra por fora e outra por dentro*/
 }
+
+/*---------------------- Começa a parte da responsividade --------------------------------- */
 
 @media screen and (max-width: 768px){
     .container{
@@ -197,3 +218,4 @@ body{
     }
 
 }
+    
