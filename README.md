@@ -22,7 +22,9 @@ Projeto realizado para o desenvolvimento e conhecimentos de Front-End, voltado a
     <li>Foram feitas 49 de 49 atividades.</li>
 </ul>
 
+#Certificado: HTML e CSS: praticando HTML/CSS
 
+Acesse aqui: https://cursos.alura.com.br/course/html-css-praticando-html-css
 
 
 
